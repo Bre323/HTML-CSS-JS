@@ -1,0 +1,11 @@
+button {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    gap: .3rem;
+}
+
+button img {
+    width: 1rem;
+    height: 1rem;
+}
