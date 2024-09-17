@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    width: 100%;
+    background-color: rgb(10, 1, 131);
+}
+
+ul {
+    width: 100%;
+    list-style: none;
+    background-color: rgb(10, 1, 131);
+}
+
+ul li {
+    display: inline-block;
+    position: relative;
+}
+
+ul li a {
+    display: block;
+    padding: 20px 25px;
+    color: antiquewhite;
+    text-decoration: none;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.dropdown li {
+    display: block;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    z-index: 999;
+    background-color: rgb(10, 1, 131);
+}
+
+ul li a:hover {
+    background-color: rgb(6, 0, 92);
+}
+
+ul li:hover .dropdown {
+   display: block;
+}
