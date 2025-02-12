@@ -132,9 +132,11 @@ class LinkedList {
 
     if(index < 0 || index > this.length) {
       console.error("Unable to insert at specified index");
+      return;
     }
     if(index === 0) {
       this.preppend(value);
+      return;
     }
 
     let current = this.headNode;
@@ -151,10 +153,12 @@ class LinkedList {
   removeAt(index) {
     if(index < 0 || index >= this.length) {
       console.error("Unable to remove at specified index");
+      return;
     }
     if(index === 0) {
       this.headNode = this.headNode.nextNode;
       this.length--;
+      return;
     }
 
     let current = this.headNode;
