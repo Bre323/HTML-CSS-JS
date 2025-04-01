@@ -1,2 +1,2 @@
 # HTML-CSS-JS
-Exercicios utilizando html, css e javascript.
+Files with exercises with HTML, CSS and Javascript.
