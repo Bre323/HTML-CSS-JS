@@ -5,7 +5,6 @@
 }
 
 .wrapper {
-    background-color: aqua;
     position: absolute;
     display: flex;
     justify-content: center;
@@ -18,7 +17,6 @@
 .slider {
     position: absolute;
     inset: 80px 200px 80px 80px;
-    background: gray;
 }
 
 .slider .image {
@@ -97,6 +95,29 @@
 
 .button span:active {
     opacity: 0.5;
+}
+
+
+@media(max-width: 900px) {
+    .slider {
+        position: absolute;
+        inset: 40px;
+        background: #fff;
+        border-radius: 10%;
+    }
+
+    .slider .image:nth-child(1),
+    .slider .image:nth-child(2) {
+        top: initial;
+        bottom: 0px;
+    }
+
+    .slider .image {
+        height: 100px; 
+        width: 100px;
+        top: initial;
+        bottom: 200px;
+    }
 }
 
 /*
