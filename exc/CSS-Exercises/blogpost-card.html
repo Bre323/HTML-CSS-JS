@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Post Card</title>
+    <style>
+        body {
+            background-color: beige;
+        }
+
+        .blog-post-card {
+            background-color: white;
+            border-radius: 10px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .post-img {
+            width: 100%;
+            border-bottom: 2px dotted black;
+        }
+
+        .post-content {
+            padding: 20px;
+        }
+
+        .post-title,
+        .post-excerpt {
+            color: darkblue;
+            margin: 10px;
+        }
+
+        .read-more {
+            display: inline-block;
+            color: darkblue;
+            background-color: beige;
+            margin: 5px;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        .read-more:hover { 
+            background-color: brown;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="blog-post-card">
+        <img class="post-img" src="https://cdn.freecodecamp.org/curriculum/labs/cover-photo.jpg" alt="cover photo">
+        <div class="post-content">
+            <h2 class="post-title">Javascript</h2>
+            <p class="post-excerpt">
+                JavaScript is a high-level, dynamic, and interpreted programming language widely used in modern web development. With it, you can create interactive interfaces, manipulate the DOM, consume APIs, handle events, and much more — both on the front-end and back-end, thanks to Node.js. Its rich ecosystem, composed of libraries and frameworks such as React, Vue, and Angular, makes JavaScript one of the most popular and versatile languages in the world of software development.
+            </p>
+            <a class="read-more" href="#">Read More</a>
+        </div>
+    </div>
+</body>
+</html>
