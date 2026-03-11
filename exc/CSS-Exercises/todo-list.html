@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Styled To-Do List</title>
+    <style>
+        a {
+            text-decoration: none;
+        }
+
+        a:link {
+            color: red;
+        }
+
+        a:hover {
+            color: purple;
+        }
+
+        a:active {
+            color: black;
+        }
+
+        a:focus {
+            outline: 1px solid black;
+        }
+
+        a:visited {
+            color: brown;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="todo-list">
+        <li>
+            <input type="checkbox" id="item-1">
+            <label for="item-1">First Task</label>
+            <ul class="sub-item">
+                <li>
+                    <a class="sub-item-link" href="#" target="_blank">First sub item</a>
+                </li>
+            </ul>
+        </li>
+
+        <li>
+            <input type="checkbox" id="item-2">
+            <label for="item-2">Second Task</label>
+            <ul class="sub-item">
+                <li>
+                    <a class="sub-item-link" href="#" target="_blank">Second sub item</a>
+                </li>
+            </ul>
+        </li>
+
+        <li>
+            <input type="checkbox" id="item-3">
+            <label for="item-3">Third Task</label>
+            <ul class="sub-item">
+                <li>
+                    <a class="sub-item-link" href="#" target="_blank">Third sub item</a>
+                </li>
+            </ul>
+        </li>
+
+        <li>
+            <input type="checkbox" id="item-4">
+            <label for="item-4">Fourth Task</label>
+            <ul class="sub-item">
+                <li>
+                    <a class="sub-item-link" href="#" target="_blank">Fourth sub item</a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</body>
+
+</html>
