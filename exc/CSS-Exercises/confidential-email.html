@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Confidential Email</title>
+  <style>
+    #email {
+      padding: 50px;
+      margin: 50px auto;
+      width: 500px;
+      border: 2px solid black;
+      box-sizing: border-box;
+    }
+
+    #confidential, #top-secret {
+      display: inline-block;
+      transform: rotate(15deg);
+      padding: 15px;
+      border: 1px solid red;
+      color: red;
+      margin-left: 15px;
+    }
+
+    .blurred {
+      filter: blur(3px);
+    }
+  </style>
+</head>
+
+<body>
+  <main id="email">
+    <div id="confidential">CONFIDENTIAL</div>
+    <div id="top-secret">TOP SECRET</div>
+    <p><span class="blurred">Lorem</span> <span class="blurred">Ipsum</span> <span class="blurred">Dolem</span></p>
+    <p><span class="blurred">Lorem</span> <span class="blurred">Ipsum</span> <span class="blurred">Dolem</span></p>
+    <p><span class="blurred">Lorem</span> <span class="blurred">Ipsum</span> <span class="blurred">Dolem</span></p>
+  </main>
+</body>
+
+</html>
