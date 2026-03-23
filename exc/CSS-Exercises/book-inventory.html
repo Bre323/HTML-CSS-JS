@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Book Inventory</title>
+  <style>
+    tr[class="read"] {
+      background-image: linear-gradient(aqua, #ddddff);
+    }
+
+    tr[class="to-read"] {
+      background-image: linear-gradient(beige, #dddddd);
+    }
+
+    tr[class="in-progress"] {
+      background-image: linear-gradient(yellow, #ddddff);
+    }
+
+    span {
+      display: inline-block;
+    }
+
+    tr[class="to-read"] span[class="status"] {
+      border: 0;
+      background-image: linear-gradient(beige, #dddddd);
+    }
+
+    tr[class="read"] span[class="status"] {
+      border: 0;
+      background-image: linear-gradient(aqua, #ddddff);
+    }
+
+    tr[class="in-progress"] span[class="status"] {
+      border: 0;
+      background-image: linear-gradient(yellow, #ddddff);
+    }
+
+    span[class="status"],
+    span[class^="rate"] {
+      height: 25px;
+      width: 90px;
+      padding: 2px;
+    }
+
+    span[class^="rate"] > span {
+      border: 1px solid black;
+      border-radius: 10px;
+      margin: 2px;
+      height: 5px;
+      width: 90px;
+      background-color: pink;
+    }
+
+    span[class~="one"] > :nth-child(1) {
+      background-image: linear-gradient(90deg, green, gray);
+    }
+
+    span[class~="two"] > :nth-child(-n+2) {
+      background-image: linear-gradient(90deg, red, gray);
+    }
+
+    span[class~="three"] > span {
+      background-image: linear-gradient(90deg, pink, gray);
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Book Inventory</h1>
+  <table>
+    <thead>
+      <th>Title</th>
+      <th>Author</th>
+      <th>Category</th>
+      <th>Status</th>
+      <th>Rate</th>
+    </thead>
+    <tbody>
+      <tr class="read">
+        <th></th>
+        <td></td>
+        <td></td>
+        <td><span class="status">Read</span></td>
+        <td>
+          <span class="rate three">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </td>
+      </tr>
+      <tr class="to-read">
+        <th></th>
+        <td></td>
+        <td></td>
+        <td><span class="status">To Read</span></td>
+        <td>
+          <span class="rate">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </td>
+      </tr>
+      <tr class="in-progress">
+        <th></th>
+        <td></td>
+        <td></td>
+        <td><span class="status">In Progress</span></td>
+        <td>
+          <span class="rate">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </td>
+      </tr>
+      <tr class="read">
+        <th></th>
+        <td></td>
+        <td></td>
+        <td><span class="status">Read</span></td>
+        <td>
+          <span class="rate three">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+
+</html>
